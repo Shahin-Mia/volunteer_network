@@ -81,7 +81,7 @@ const RegisterForm = (props) => {
                                     InputLabelProps={{
                                         shrink: true,
                                     }}
-                                    onBlur={handleBlur}
+                                    onChange={handleBlur}
                                 />
                             </Grid>
                             <Grid item xs={12}>
