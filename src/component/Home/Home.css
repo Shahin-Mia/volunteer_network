@@ -1,0 +1,41 @@
+.banner{
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../../logos/banner.png');
+    background-repeat: no-repeat no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+.search-field{
+    background-color: white;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 470px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: auto;
+}
+.search-field>input, .search-field>button{
+    border: none;
+    outline: none;
+    background: none;
+}
+.search-field>button{
+    background: #3F90FC;
+    border-radius: 0px 8px 8px 0px;
+    width: 118px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.search-field>input{
+    width: 347px;
+    height: 50px;
+    font-size: 16px;
+}
+input::placeholder{
+    font-size: 16px;
+}
