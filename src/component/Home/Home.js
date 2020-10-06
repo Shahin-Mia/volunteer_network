@@ -30,7 +30,7 @@ const Home = () => {
                     <button type="submit">Search</button>
                 </div>
                 {
-                    data.map(data => <MediaCard data={data} key={data.key}></MediaCard>)
+                    data.map(data => <MediaCard data={data} key={data._id}></MediaCard>)
                 }
             </Container>
         </div>
