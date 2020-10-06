@@ -18,7 +18,7 @@ const Register = () => {
 
     const [activityData, setActivityData] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/activity/${id}`)
+        fetch(`https://young-ocean-39701.herokuapp.com/activity/${id}`)
             .then(res => res.json())
             .then(data => setActivityData(data))
     }, [id]);
@@ -38,7 +38,7 @@ const Register = () => {
 
     const handleSubmit = () => {
         const details = { ...loggedInUser, ...userInfo, image };
-        fetch('http://localhost:4000/addVolunteer', {
+        fetch('https://young-ocean-39701.herokuapp.com/addVolunteer', {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(details)

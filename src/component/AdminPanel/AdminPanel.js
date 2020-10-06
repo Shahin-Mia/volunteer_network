@@ -13,7 +13,7 @@ const AdminPanel = () => {
     const [volunteerList, setVolunteerList] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/volunteerList')
+        fetch('https://young-ocean-39701.herokuapp.com/volunteerList')
             .then(res => res.json())
             .then(data => setVolunteerList(data));
     }, [])

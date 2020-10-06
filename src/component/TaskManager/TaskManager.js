@@ -9,7 +9,7 @@ const TaskManager = () => {
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/registeredActivities?email=${loggedInUser.email}`)
+        fetch(`https://young-ocean-39701.herokuapp.com/registeredActivities?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setUserData(data));
     }, [loggedInUser])

@@ -8,7 +8,7 @@ const Home = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/activities')
+        fetch('https://young-ocean-39701.herokuapp.com/activities')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

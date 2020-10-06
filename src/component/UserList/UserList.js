@@ -60,7 +60,7 @@ function UserList(props) {
     });
 
     const deleteUser = (id, event) => {
-        fetch(`http://localhost:4000/deleteUser/${id}`, {
+        fetch(`https://young-ocean-39701.herokuapp.com/deleteUser/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

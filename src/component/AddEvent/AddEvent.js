@@ -43,7 +43,7 @@ const AddEvent = () => {
     }
 
     const handleSubmit = () => {
-        fetch('http://localhost:4000/addActivity', {
+        fetch('https://young-ocean-39701.herokuapp.com/addActivity', {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(eventInfo)
